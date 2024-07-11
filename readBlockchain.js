@@ -1,6 +1,9 @@
 const { ethers } = require("ethers");
-const provider = new ether.providers.JsonRpcProvider(`https://mainnet.infura.io.infura.io/v3/82843bd181984a0da8832ac77678ffcb`);
+const provider = new ethers.providers.JsonRpcProvider(`https://mainnet.infura.io/v3/28f029bc75b84ed9a1cce9c27495011b`);
 
-const querryBlockchain = async () => {
-    const block = await provider.getBlockNumber
+const queryBlockchain = async () => {
+    const block = await provider.getBlockNumber();
+    console.log("current Block Number:", block);
 }
+
+queryBlockchain();
